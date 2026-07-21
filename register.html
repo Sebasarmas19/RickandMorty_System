@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty System - Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .icon { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Create Account</h2>
+                <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">Join the multiverse today</p>
+            </div>
+            
+            <div id="alert-container"></div>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Morty Smith" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="morty@earth.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••••" required minlength="6">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" class="form-control" placeholder="••••••••" required minlength="6">
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    Sign Up
+                </button>
+            </form>
+            
+            <div class="auth-footer">
+                Already have an account? <a href="index.html" class="auth-link">Sign in</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
